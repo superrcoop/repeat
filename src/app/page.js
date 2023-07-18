@@ -4,6 +4,16 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className={styles.topbar}>
+        <div className={styles.hamburgerMenu}>
+          {/* Hamburger menu icon */}
+        </div>
+        <h1 className={styles.title}>repyt</h1>
+        <div className={styles.options}>
+          {/* Vertical ellipse options icon */}
+        </div>
+      </div>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -40,55 +50,37 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <button className={styles.card}>
           <h2>
-            Docs <span>-&gt;</span>
+            Start <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <p>Begin the game</p>
+        </button>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <button className={styles.card}>
           <h2>
-            Learn <span>-&gt;</span>
+            Leaderboard <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+          <p>View the leaderboard</p>
+        </button>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <button className={styles.card}>
           <h2>
-            Templates <span>-&gt;</span>
+            Mode <span>-&gt;</span>
           </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
+          <p>Select the game mode</p>
+        </button>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <button className={styles.card}>
           <h2>
-            Deploy <span>-&gt;</span>
+            Preferences <span>-&gt;</span>
           </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <p>Customize your preferences</p>
+        </button>
+      </div>
+
+      <div style={{ color: 'white', fontSize: 14, fontFamily: 'Roboto', fontWeight: '500', wordWrap: 'break-word' }}>
+        Bonus
       </div>
     </main>
   )
